@@ -101,6 +101,11 @@
   font-weight: 900;
 }
 
+.highlight-button {
+  background-color: #3268b1 !important;
+  color: white !important;
+}
+
 
 @media (max-width: 600px)
 {

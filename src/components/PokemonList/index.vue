@@ -23,7 +23,7 @@
       </v-row>
       <v-row>
         <v-btn
-          class="centralized mb-6"
+          class="centralized mb-6 mt-6 highlight-button"
           @click="loadMorePokemons()"
         >
           Load More

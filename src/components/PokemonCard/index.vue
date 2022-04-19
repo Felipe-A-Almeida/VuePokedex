@@ -1,6 +1,7 @@
 <template>
   <v-card
     class="height-500"
+    elevation="10"
     outlined
   >
     <v-list-item four-line>
@@ -9,19 +10,9 @@
           {{ getFormattedPokemonCode(pokemon.id) }}
         </div>
         <v-list-item-title class="text-h5 mb-1">
-          <v-tooltip top>
-            <template v-slot:activator="{ on, attrs }">
-              <span
-                v-bind="attrs"
-                v-on="on"
-              >
-                {{ getFormattedPokemonName(pokemon.name) }}
-              </span>
-            </template>
-            <span>
-              {{ getFormattedPokemonName(pokemon.name) }}
-            </span>
-          </v-tooltip>
+          <span>
+            {{ getFormattedPokemonName(pokemon.name) }}
+          </span>
         </v-list-item-title>
         <v-list-item-subtitle>
           <v-row
@@ -51,6 +42,8 @@
         outlined
         rounded
         text
+        width="100%"
+        class="highlight-button"
         @click="seePokemonDetails(pokemon.id)"
       >
         See more
