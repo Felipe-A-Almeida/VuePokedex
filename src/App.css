@@ -89,6 +89,7 @@
 .pokemon-type-color__shadow {
   background-color: rgb(0, 0, 0) !important;
 }
+/* -END POKEMON TYPE COLORS- */
 
 .subtitle {
   color: #3268b1 !important;
@@ -104,6 +105,10 @@
 .highlight-button {
   background-color: #3268b1 !important;
   color: white !important;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 
