@@ -1,5 +1,11 @@
 # vue-pokedex
 
+Welcome to my Pokedex!
+
+This project was developed using VueJs and Vuetify framework.
+
+This software allows you to consult all pokemons using PokeAPI. It also allow you to search for a specific pokemon by it's name and shows details about a selected Pokemon.
+
 ## Project setup
 ```
 npm install
@@ -9,11 +15,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
