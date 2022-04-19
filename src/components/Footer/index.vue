@@ -1,7 +1,5 @@
 <template>
   <v-footer
-    v-bind="localAttrs"
-    :padless="padless"
     class="highlight-button"
   >
     <v-row

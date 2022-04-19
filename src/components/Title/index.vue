@@ -12,12 +12,12 @@ export default {
 
   props: {
     classes: {
-      type: 'String',
+      type: String,
       default: '',
     },
 
     text: {
-      type: 'String',
+      type: String,
       required: true,
     }
   }

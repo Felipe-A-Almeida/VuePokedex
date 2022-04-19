@@ -98,14 +98,18 @@ export default {
 
   mounted() {
     if (localStorage.history) {
-      localStorage.history.split(',').map(pokemonId => this.getPokemonById(pokemonId));
+      localStorage.history.split(',').map(pokemonId => {
+        if (pokemonId !== 'null') {
+          return this.getPokemonById(pokemonId);
+        }     
+      });
     }
   },
 
   methods: {
     submit(event) {
       event.preventDefault();
-      const url = `https://pokeapi.co/api/v2/pokemon/${this.search}`;
+      const url = `https://pokeapi.co/api/v2/pokemon/${this.search.toLowerCase()}`;
       axios.get(url)
       .then((response) => {
         if (localStorage.history) {
